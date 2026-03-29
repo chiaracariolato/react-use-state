@@ -14,18 +14,20 @@ export default function ButtonList(props) {
 
     return (
         <>
-            <div className="buttonList">
-                {languages.map((lang) => (
-                    <Button
-                        key={lang.id}
-                        lang={lang}
-                        isActive={activeId === lang.id}
-                        onClick={() => setActiveId(lang.id)}
-                    />
-                ))}
-            </div>
+            <div className='main-content'>
+                <div className="button-list">
+                    {languages.map((lang) => (
+                        <Button
+                            key={lang.id}
+                            lang={lang}
+                            isActive={activeId === lang.id}
+                            onClick={() => setActiveId(lang.id)}
+                        />
+                    ))}
+                </div>
 
-            <Card language={activeLanguage} />
+                <Card language={activeLanguage} />
+            </div>
         </>
     )
 

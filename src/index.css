@@ -7,13 +7,50 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 24px
+  padding: 24px;
+  font-family: sans-serif;
 }
 
-.clickedButton {
-  background-color: blue;
+.main-content {
+  padding: 24px;
 }
 
-.standardButton {
-  background-color: white;
+.button-list {
+  padding-bottom: 24px;
+
+  display: flex;
+  gap: 16px;
+}
+
+button {
+  padding: 8px 12px;
+  border: 0px;
+  border-radius: 4px;
+}
+
+.clicked-button {
+  background-color: #F5C344;
+  color: black;
+}
+
+.standard-button {
+  background-color: #316CF4;
+  color: white;
+}
+
+.card {
+  border: 1px lightgray solid;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.card h3 {
+  font-size: medium;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: small;
+  font-weight: lighter;
 }
